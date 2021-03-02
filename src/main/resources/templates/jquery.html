@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- link th:href="@{/css/myStyleSheet.css}" href="../css/myStyleSheet.css" rel="stylesheet" type="text/css" -->
+    <title>Homepage</title>
+</head>
+<body>
+<div id="container" class="container">
+    <h1>JavaScript Demo</h1>
+    <input id="input" type="text"/>
+    <div id="textsektion">
+        Min fine tekst!
+    </div>
+
+    <img id="billede" src="https://imgs.xkcd.com/comics/post_pandemic_hat_2x.png" alt="Post Covid Hat"/>
+    <button id="mitBilledeKnap">Don't press this Button!</button>
+
+    <form onsubmit="formSubmit()">
+        <input id="txtForm" type="text"/>
+        <input type="submit" value="Tryk her!"/>
+    </form>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            btnClick();
+        })
+    })
+
+    function btnClick(){
+        $("#textsektion").hide();
+        alert($("#textsektion").text());
+    }
+</script>
+<!-- erstattet af jquery
+<script src="../static/js/myjavascript.js"></script>
+-->
+<!--
+<script src="../static/js/myjavascript.js" th:src="/js/myjavascript.js"></script>
+-->
+</body>
+</html>

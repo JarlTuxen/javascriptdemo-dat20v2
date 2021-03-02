@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <!-- link th:href="@{/css/myStyleSheet.css}" href="../css/myStyleSheet.css" rel="stylesheet" type="text/css" -->
     <title>Homepage</title>
 </head>
 <body>
@@ -21,25 +22,9 @@
         </form>
     </div>
 
-    <script>
-        function btnClick(){
-            let textSektion = document.getElementById("textsektion");
-            if (textSektion.hidden == true){
-                textSektion.hidden = false;
-            }
-            else{
-                textSektion.hidden=true;
-            }
-
-            alert(document.getElementById("textsektion").innerText);
-
-        }
-
-        function formSubmit(){
-            let txt = document.getElementById("txtForm").value;
-            alert(txt);
-            //document.getElementById("textsektion").innerText = txt; //dur ikke - siden reloader onsubmit
-        }
-    </script>
+    <script src="../static/js/myjavascript.js"></script>
+    <!--
+    <script src="../static/js/myjavascript.js" th:src="/js/myjavascript.js"></script>
+    -->
 </body>
 </html>
