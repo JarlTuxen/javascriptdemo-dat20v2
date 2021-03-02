@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- link th:href="@{/css/myStyleSheet.css}" href="../css/myStyleSheet.css" rel="stylesheet" type="text/css" -->
+    <!-- th:src til Thymeleaf og src til preview i IntelliJ -->
+    <!-- link th:href="@{/css/myStyleSheet.css}" href="../static/css/myStyleSheet.css" rel="stylesheet" type="text/css" -->
     <title>Homepage</title>
 </head>
 <body>
@@ -36,11 +37,6 @@
         alert($("#textsektion").text());
     }
 </script>
-<!-- erstattet af jquery
-<script src="../static/js/myjavascript.js"></script>
--->
-<!--
-<script src="../static/js/myjavascript.js" th:src="/js/myjavascript.js"></script>
--->
+
 </body>
 </html>

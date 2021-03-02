@@ -1,4 +1,5 @@
 function btnClick(){
+    alert("btnClick()");
     let textSektion = document.getElementById("textsektion");
     if (textSektion.hidden == true){
         textSektion.hidden = false;
@@ -12,6 +13,7 @@ function btnClick(){
 }
 
 function formSubmit(){
+    alert("formSubmit");
     let txt = document.getElementById("txtForm").value;
     alert(txt);
     //document.getElementById("textsektion").innerText = txt; //dur ikke - siden reloader onsubmit

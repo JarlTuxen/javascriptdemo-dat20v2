@@ -2,7 +2,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <!-- link th:href="@{/css/myStyleSheet.css}" href="../css/myStyleSheet.css" rel="stylesheet" type="text/css" -->
+    <!-- th:src til Thymeleaf og src til preview i IntelliJ -->
+    <link th:href="@{/css/myStyleSheet.css}" href="../static/css/myStyleSheet.css" rel="stylesheet" type="text/css">
     <title>Homepage</title>
 </head>
 <body>
@@ -22,9 +23,8 @@
         </form>
     </div>
 
-    <script src="../static/js/myjavascript.js"></script>
-    <!--
-    <script src="../static/js/myjavascript.js" th:src="/js/myjavascript.js"></script>
-    -->
+    <!-- th:src til Thymeleaf og src til preview i IntelliJ -->
+    <script th:src="@{/js/myjavascript.js}" src="../static/js/myjavascript.js" type="text/javascript"></script>
+
 </body>
 </html>
