@@ -33,8 +33,14 @@
     })
 
     function btnClick(){
-        $("#textsektion").hide();
-        alert($("#textsektion").text());
+
+        $("#textsektion").toggle(); //skift mellem hidden/unhidden
+
+        $("button").text("Opsamling på JQuery");
+        var v = $("#txtForm").val();
+        alert(parseFloat(v));
+        alert(parseInt(v, 10));
+
     }
 </script>
 
